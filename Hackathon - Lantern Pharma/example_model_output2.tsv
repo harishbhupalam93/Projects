@@ -1,0 +1,10 @@
+	Fulvestrant_response	Mitomycin_response	Gefitinib_response	Rapamycin_response	Rapamycin.Gefitinib_response	Mitomycin.Fulvestrant_response	Fulvestrant_key_feature	Mitomycin_key_feature	Gefitinib_key_feature	Rapamycin_key_feature	Rapamycin.Gefitinib_key_feature	Mitomycin.Fulvestrant_key_feature
+BrainCNS_VFF746	0	1	0	0	0	1						
+Bowel_KI64	0	0	0	0	0	0						
+Bowel_QEVT62	0	0	0	0	0	0						
+Lung_TXY395	0	0	0	1	1	1						
+Lung_JIL5	0	1	0	0	0	0						
+Blood_CB485	1	1	0	0	0	0						
+Skin_SFL7	0	1	1	0	0	0						
+Skin_VAK5	0	1	1	1	1	0						
+Ovary_XT38	0	1	0	0	0	0						

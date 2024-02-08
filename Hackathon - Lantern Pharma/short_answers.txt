@@ -1,0 +1,31 @@
+1. Describe the approach and methodology used to generate models, and if applicable indicate what differed in preparation of models to predict a single drug treatment vs drug combination treatment. 300 words or less.
+
+Approach and Methodology:
+ 
+Given the small number of observations, the approach was to over-sample the training data in order to give the models a good chance to learn enough about the data. A small partition of training data was used for validation (oversampling was done after splitting to ensure validation is accurate).  The approach differed from oversampling only positive classes, to weighted sampling, to random sampling both classes, based on distribution of target variable of different drugs and combinations.
+
+Most important step was to reduce the dimensionality through methods like PCA and Lasso and then check for the initial accuracy using various models. We observed that PCA and lasso were giving similar results in terms of accuracy. Since Logistic Regression (with L1 regilarisation) is more interpretable, we used that model.
+
+Difference in single and combination drugs:
+
+For all the single drugs, lasso with a default penalty of 1 gave the best results. For the combination of Mitomycin and Fulvestrant drugs, a higher penalty of 200 gave us the best results. The approach for Rapamycin and Gefitinib combination was to use a Meta-Logistic-Regression Classifier based on the individual drug responses. We used the predictions of the Rapamycin and Gefitinib as the independent variables for a logistic Regression.
+
+
+
+
+2. Write pseudocode that calculates feature contribution to predictions that could generally be applied to any predictive model. No space limitation.
+
+----
+
+
+3. Describe any notable patterns observed when comparing important features, or overall model interpretation, of single agents and combinations of the same agents and suggest possible reasons for such pattern. 300 words or less.
+
+An observation was that while it is expected to have different set of important features for different drugs, the combinations had some important features entirely different from both the individual drugs. The number of important features also varied in number from 51 to 650.
+For Fulvestrant drug particularly it was difficult to get the model to predict a positive response (most predictions resulted in a 0). To resolve this, we oversampled only the 1’s to invert the imbalance and perhaps help the model to learn better.
+
+
+
+
+4. There are a staggeringly large number of potential drug combinations. It is highly desirable to use one drug to overcome the resistance to another drug in various cancers, or to identify synergy where the efficacy of drugs are significantly larger than the additive impact of the same drugs applied alone. However, drug efficacy as well as drug combination efficacy significantly varies across individual tumors, making it challenging to test drug combinations one by one. In a scenario where you had extensive single-drug response data (similar to the data of this challenge given with individual drugs in this challenge), suggest an approach to prioritize drug combination candidates for pairs that have yet to be tested in combination. 300 words or less.
+
+The approach we attempted using a Logistic Regression as a meta-Classifier for the combination of Rapamycin and Gefitinib is perhaps worth trying. Training a meta-classifier based on already existing combinations can be used to predict which combinations might produce some synergistic or resistive effects. The predictions with highest probabilities can be chosen for testing on priority

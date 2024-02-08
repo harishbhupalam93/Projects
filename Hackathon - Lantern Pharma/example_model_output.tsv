@@ -1,0 +1,10 @@
+	Fulvestrant_response	Mitomycin_response	Gefitinib_response	Rapamycin_response	Rapamycin.Gefitinib_response	Mitomycin.Fulvestrant_response	Fulvestrant_key_feature	Mitomycin_key_feature	Gefitinib_key_feature	Rapamycin_key_feature	Rapamycin.Gefitinib_key_feature	Mitomycin.Fulvestrant_key_feature
+0	0	1	0	0	0	1						
+1	0	0	0	0	0	0						
+2	0	0	0	0	0	0						
+3	0	0	0	1	1	1						
+4	0	1	0	0	0	0						
+5	1	1	0	0	0	0						
+6	0	1	1	0	0	0						
+7	0	1	1	1	1	0						
+8	0	1	0	0	0	0						

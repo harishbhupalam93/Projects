@@ -1,0 +1,16 @@
+	Fulvestrant_model	Mitomycin_model	Gefitinib_model	Rapamycin_model	Rapamycin.Gefitinib_model	Mitomycin.Fulvestrant_model
+Filename	Lantern_ful.ipynb	Lantern_mito.ipynb	Lantern_gefit.ipynb	Lantern_repa.ipynb	Lantern_repa-gef.ipynb	Lantern_mito-ful.ipynb
+Algorithm used	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Meta Logistic Classfier
+Training accuracy	8	Bob	Bob	Bob	Bob	Bob
+Number of features	John	John	John	John	John	John
+Feature evaluation method	Alice	Alice	Alice	Alice	Alice	Alice
+Overall key feature	Bob	Bob	Bob	Bob	Bob	Bob
+Breast key feature	John	John	John	John	John	John
+BrainCNS key feature	Alice	Alice	Alice	Alice	Alice	Alice
+Bowel key feature	Bob	Bob	Bob	Bob	Bob	Bob
+Blood key feature	John	John	John	John	John	John
+Skin key feature	Alice	Alice	Alice	Alice	Alice	Alice
+Lung key feature	Bob	Bob	Bob	Bob	Bob	Bob
+Ovary key feature	John	John	John	John	John	John
+Prostate key feature	Alice	Alice	Alice	Alice	Alice	Alice
+Kidney key feature	Bob	Bob	Bob	Bob	Bob	Bob

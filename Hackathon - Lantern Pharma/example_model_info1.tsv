@@ -1,0 +1,16 @@
+	Fulvestrant_model	Mitomycin_model	Gefitinib_model	Rapamycin_model	Rapamycin.Gefitinib_model	Mitomycin.Fulvestrant_model
+Filename	Lantern_ful.ipynb	Lantern_mito.ipynb	Lantern_gefit.ipynb	Lantern_repa.ipynb	Lantern_repa-gef.ipynb	Lantern_mito-ful.ipynb
+Algorithm used	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Logistic Regression using L1 Regularization	Meta Logistic Classfier
+Training accuracy	1	1	1	1	0.6	1
+Number of features	51	107	140	570	2	653
+Feature evaluation method	Coefficients of Logistic regression	Coefficients of Logistic regression	Coefficients of Logistic regression	Coefficients of Logistic regression	Meta Classifier - Coefficients of Logistic regression	Coefficients of Logistic regression
+Overall key feature	rna_SNORA52	rna_SNORA62	mut_OR5L2	rna_SNORA74A	rna_SNORA74A	rna_SNORA74A
+Breast key feature	1	0	0	0	0	0
+BrainCNS key feature	0	0	0	0	0	0
+Bowel key feature	0	0	0	1	1	1
+Blood key feature	0	0	0	0	0	0
+Skin key feature	0	0	0	0	0	0
+Lung key feature	0	0	0	0	0	0
+Ovary key feature	0	1	0	0	0	0
+Prostate key feature	0	0	0	0	0	0
+Kidney key feature	0	0	0	0	0	0
